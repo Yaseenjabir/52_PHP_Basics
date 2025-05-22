@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- ADD DATA FORM  -->
+    <form action="./MyProject.php" method="post">
+      <h2>Fill the form and submit data</h2>
+      <input type="text" name="name" placeholder="Enter name" required />
+      <br />
+      <br />
+      <input type="text" name="email" placeholder="Enter email" required />
+      <br />
+      <br />
+      <input type="number" name="age" placeholder="Enter age" required />
+      <br />
+      <br />
+      <input
+        type="password"
+        name="password"
+        placeholder="Enter password"
+        required
+      />
+      <br />
+      <br />
+      <button name="action" type="submit" value="submit">Submit</button>
+      <button name="action" type="submit" value="read">Read</button>
+      <br />
+      <br />
+    </form>
+    <!-- UPDATE DATA FORM  -->
+    <form action="./MyProject.php" method="post">
+      <h2>Enter the values to update the item</h2>
+      <input
+        type="text"
+        required
+        placeholder="Enter updated name"
+        name="updatedName"
+      />
+      <br />
+      <br />
+      <input
+        type="number"
+        required
+        placeholder="Enter updated age"
+        name="updatedAge"
+      />
+      <br />
+      <br />
+      <input type="number" required placeholder="Enter id" name="id" />
+      <br />
+      <br />
+      <button name="action" type="submit" value="update">Update</button>
+      <br />
+      <br />
+    </form>
+    <!-- DELETE DATA FORM  -->
+    <form action="./MyProject.php" method="post">
+      <h2>Enter the id to delete item</h2>
+      <input type="number" required placeholder="Enter id" name="id" />
+      <br />
+      <br />
+      <button name="action" type="submit" value="delete">Delete</button>
+      <br />
+      <br />
+    </form>
+  </body>
+</html>
